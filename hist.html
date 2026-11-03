@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<!-- Asked AI to give me a very rough draft template using CSS and HTML to get me started -->
+<head>
+    <title>Faaezah Studies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+        body {
+            font-family: 'Raleway', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #BAC8Ff;
+            color: #333;
+            --w3-font-size: 30px;
+            --w3-warning-bg: #9DC183;
+
+
+        }
+
+        header.main-header {
+            background-color: #ffb6c1;
+            color: #fff;
+            padding: 30px 15px;
+            border-bottom: 5px solid #9DC183;
+        }
+
+
+        .custom-nav {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .custom-nav a {
+            transition: all 0.3s ease;
+        }
+
+        /* Hovering menu items turns them Sage Green */
+        .custom-nav {
+            background-color: #9DC183 !important;
+            color: white !important;
+        }
+
+        /* Layout placeholders styling */
+        .app-section {
+            background-color: #D8A7B1;
+            --w3-font-size: 25px;
+            text-align: center;
+            border: 10px dotted #F7BD81;
+        }
+
+       /* free opensource code from FreeFrontend: https://freefrontend.com/css-snow-effects/#2025-11-14-css-snowfall-effect-with-sass-generator-l */
+       /* modified this code to match the website and had AI debug the space at the top error I had  */
+.snowFall {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.snowFall div {
+  position: absolute;
+  top: -10vh;
+
+  left: calc(100% / 12 * (1 + (11 * (var(--delayVar, 1) + 1)) % 11));
+
+  display: inline-flex;
+  flex-shrink: 0;
+  margin: 3vh;
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  background-color: white;
+  --scaleVar: 0.5;
+  --delayVar: 0;
+  opacity: 0.35;
+  animation: fallAnim 12000ms linear infinite;
+}
+.delayMe div {
+  animation-delay: 1200ms;
+}
+.snowFall div:nth-of-type(2n) {
+  animation-delay: -14000ms;
+  animation-duration: 11000ms;
+  left: 20%;
+
+}
+.snowFall div:nth-of-type(3n) {
+  animation-delay: -300ms;
+  animation-duration: 14000ms;
+  left: 70%;
+}
+.biggerSnow {
+  transform: scale(1.5);
+/*   filter: blur(0.2vh); */
+}
+.delayMe div:nth-of-type(2n) {
+  animation-delay: 1500ms;
+}
+.delayMe div:nth-of-type(3n) {
+  animation-delay: 11000ms;
+}
+
+.org {
+background-color: #D8A7B1;
+ --w3-font-size: 25px
+
+}
+
+.button-fix {
+    width: 100px;
+    height:200px;
+    /* googled some of the ways to fix the image not showing fully */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size:cover;
+}
+
+@keyframes fallAnim {
+  0% {
+    transform: translateY(0) scale(var(--scaleVar));
+  }
+  100% {
+    transform: translateY(120vh) scale(var(--scaleVar));
+  }
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+<!-- Header Section -->
+
+<div class="snowFall">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class="snowFall delayMe">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class="snowFall biggerSnow">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class="snowFall delayMe biggerSnow">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+
+<header class="w3-container w3-center main-header">
+    <h1 class="w3-jumbo w3-text-bold">Faaezah Studies</h1>
+    <p class="w3-font-size">Made by Faaezah to uplift other girls in their studies! </p>
+    <button id="changeCol" onclick="document.body.classList.toggle('w3-dark-mode')">
+        Switch to the Abyss
+    </button>
+
+
+    <div class="w3-padding-24">
+        <nav class="w3-bar custom-nav w3-border w3-card" style="display:inline-flex; flex-wrap: wrap; justify-content: center;">
+            <a href="index.html">Home</a>
+        </nav>
+    </div>
+</header>
+
+
+
+<div class="w3-content w3-padding-64" style="max-width:1200px">
+
+    <div> </div>
+    <!-- writingHist has no real function here -->
+    <div id="writingHist" class="app-section">
+
+        <h2 class="w3-text-Black -w3-font-size">Subject Help</h2>
+        <h1><strong>History</strong> tips </h1>
+        <ol>
+            <li><strong> Why does this matter? </strong> </li>
+            <ul>
+                <li><p> AP World History is crucial to help you understand the factors that have influenced how the world is today.</p></li>
+                <li><p>It is good to know as it helps you also makes more informed decisions</p></li>
+                <li><p>We covered this so we can start with some motivation before we go deep into WHAP</p></li>
+            </ul>
+
+            <li><strong> What should I do BEFORE the unit is taught? </strong> </li>
+            <ul>
+                <li><p> You don't need to know the entire unit material before it is taught.</p></li>
+                <li><p>It is good, though to do some reading before-hand so you can have a little bit of context.</p></li>
+                <li><p>I highly suggest watching Heimler's history tutorials/ reading a textbook before the unit is there</p></li>
+                <li><p>Lowk this is very underrated! I wish more people knew about this!</p></li>
+            </ul>
+
+            <li><strong> What should I do DURING the unit? </strong> </li>
+            <ul>
+                <li><p> This honestly really depends on what kind of a note taker you are.</p></li>
+                <li>The best strategy that worked for me was to listen to the notes in class, and then take any notes at home </li>
+                <li>While the teacher was explaining, I used to jot down 2-3 things I did not understand/had questions on so I could cover it more in detail when I got home.</li>
+                <li>This is not a one-for-all method and it really depends on what YOU are good with.</li>
+                <li>That said, there is one key thing that all note-taking practices need: ACTIVE RECALL </li>
+            </ul>
+
+            <li><strong> What is ACTIVE RECALL? </strong> </li>
+            <ul>
+                <li><p> Active recall is an interactive way of studying</p></li>
+                <li><p>When studying, you don't just look over notes, but rather you pull information and test things DIRECTLY from your brain</p></li>
+                <li><p><strong> Well, How can I do that? </strong></p></li>
+                <li><p> Flashcards are an amazing way to do that.</p></li>
+                <li><p>If you are lazy like me, you can use Quizlet to practice.</p></li>
+            </ul>
+
+            <li><strong> What about the FRQs? </strong> </li>
+            <ul>
+                <li><p>There are two main different FRQs in WHAP: LEQs and SAQS</p></li>
+                <li><p>Both of these really reward following a specific pattern.</p></li>
+                <li><p>What I mean is there is a specific way the AP grader and your school wants you to write these.</p></li>
+                <li><p>To learn the structure, one should watch Heimler's and ask your instructor</p></li>
+                <li><p>There will be FRQs to which you don't know the answer but it is important to think about that time period and gather specific context that can help you with writing the FRQ</p></li>
+                <li><p>If you are still unstuck, move on and come back to it if you have time.</p></li>
+            </ul>
+        </ol>
+        <i class="fa fa-star"></i>
+        <h1><strong>That was a lot! Good job for reading through all of it :)!</strong></h1>
+
+    </div>
+
+    <p></p>
+    <p></p>
+    <div id="pic" class="app-section">
+        <img src="Screenshot%202026-11-02%20151237.png" width="600" height="486">
+        <p>Let's lock in on History!</p>
+    </div>
+
+    <p> </p>
+    <div> </div>
+
+    <div id="subjects" class="app-section">
+        <div class="w3-warning">
+            <h1>Click "Home" on the nav bar (on the top) to go back to home page :)</h1>
+        </div>
+        <div> </div>
+
+        <h2 class="w3-text-Black -w3-font-size">Subject Help</h2>
+        <h1><strong>Customized</strong> tips for various AP subjects</h1>
+        <h2>You're welcome Haha :))</h2>
+
+        <a href="geo.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="Screenshot%202026-11-02%20131614.png" alt="Icon" width="150" height = "200">
+                AP Human Geography
+            </button>
+        </a>
+
+        <a href="hist.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="Screenshot%202026-11-02%20135210.png" alt="Icon" width="150" height = "200" >
+                AP World History
+            </button>
+        </a>
+
+        <a href="Physics.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="Screenshot%202026-11-02%20131117.png" alt="Icon" width="150" height = "200" >
+                AP Physics 1
+            </button>
+        </a>
+
+        <a href="csp.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="Screenshot%202026-11-02%20135443.png" alt="Icon" width="150" height = "200">
+                AP Comp Sci Principles
+            </button>
+        </a>
+
+        <a href="csa.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="Screenshot%202026-11-02%20135549.png" alt="Icon" width="150" height = "200">
+                AP Comp Sci A
+            </button>
+        </a>
+        <p>Are you locked? Click on any buttons to begin!!</p>
+        <p></p>
+        <p>More subjects coming soon...</p>
+
+
+    </div>
+    <p> </p>
+
+
+</div>
+</div>
+
+<footer class="w3-container w3-padding-64 w3-center w3-large" style="background-color: #D8A7B1; color: white;">
+    <div class="w3-xlarge w3-padding-16">
+        <p> Created by Faaezah Ahmed Shaik - Made for girls, by a girl in STEM</p>
+        <i class="fa fa-heart"></i>
+    </div>
+</footer>
+
+</body>
+</html>
