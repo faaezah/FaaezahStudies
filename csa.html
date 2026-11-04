@@ -135,6 +135,288 @@ background-color: #D8A7B1;
   }
 }
 
+        /*fully modified this code from codepen */
+/*https://codepen.io/minajeong/pen/xmXqqo */
+
+main{
+    max-width: 500px;
+    padding-top: 3%;
+}
+.snowman *{
+  position: absolute;
+}
+.snowman {
+  position: relative;
+  margin: auto;
+  display: flex;
+
+
+  width: 200px;
+  height: 200px;
+ }
+
+
+.snowman2 {
+  transform: translateX(1055px);
+  transform: translateY(100px, -50px);
+  margin-left: auto;
+}
+.bottom {
+  top: 88%;
+	left: -7%;
+	background: white;
+	width: 120%;
+	height: 120%;
+	border-radius: 50%;
+}
+.head {
+  top: 15%;
+	left: 5%;
+	background: white;
+	width: 88%;
+	height: 88%;
+	border-radius: 50%;
+}
+.right-eye {
+	top: 45%;
+	left: 62%;
+	background: black;
+	width: 15%;
+	height: 15%;
+	border-radius: 50%;
+}
+.left-eye {
+	top: 35%;
+	left: 21%;
+	background: black;
+	width: 15%;
+	height: 15%;
+	border-radius: 50%;
+}
+.nose {
+  -webkit-clip-path: polygon(70% 51%, 70% 72%, 0 60%);
+  clip-path: polygon(70% 50%, 70% 72%, 0 60%);
+  top: -180%;
+	left:-230%;
+	width: 10%;
+	height: 11rem;
+	border-right: 10rem solid #d73d00;
+}
+.snowman-mouth-1{
+	top: 72%;
+	left: 21%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-mouth-2{
+	top: 78%;
+	left: 29%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-mouth-3{
+	top: 80%;
+	left: 40%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-mouth-4{
+	top: 79%;
+	left: 51%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-mouth-5{
+	top: 74%;
+	left: 62%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-button-1{
+	top: 115%;
+	left: 21%;
+	background: black;
+	width: 8%;
+	height: 8%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-button-2{
+	top: 130%;
+	left: 14%;
+	background: black;
+	width: 8%;
+	height: 8%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-button-3{
+	top: 147%;
+	left: 11%;
+	background: black;
+	width: 8%;
+	height: 8%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-button-4{
+	top: 165%;
+	left: 15%;
+	background: black;
+	width: 8%;
+	height: 8%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.left-arm{
+	top: 108%;
+	left: -39%;
+	background: #4c2900;
+	width: 44%;
+	height: 7%;
+	border-radius: 50%;
+	transform: rotate(20deg);
+}
+.left-mitten-1{
+	top: 95%;
+	left: -45%;
+	background:beige;
+	width: 24%;
+	height: 20%;
+	border-radius: 50% 36% 36% 50%;
+	transform: rotate(20deg);
+	z-index: 1;
+}
+.left-mitten-2{
+	top: 92%;
+	left: -34%;
+	background: beige;
+	width: 13%;
+	height: 8%;
+	border-radius: 50%;
+	transform: rotate(60deg);
+}
+.right-arm{
+  top: 107%;
+	left: 84%;
+	background: #4c2900;
+	width: 58%;
+	height: 8%;
+	border-radius: 50%;
+	transform: rotate(-20deg);
+}
+.right-mitten-1{
+	top: 93%;
+	left: 122%;
+	background:beige;
+	width: 24%;
+	height: 20%;
+	border-radius: 36% 50% 50% 36%;
+	transform: rotate(-20deg);
+	z-index: 1;
+}
+.right-mitten-2{
+	top: 91%;
+	left: 123%;
+	background: beige;
+	width: 13%;
+	height: 8%;
+	border-radius: 50%;
+	transform: rotate(-60deg);
+}
+.hat-1{
+	top: -24%;
+	left: 33%;
+	background: #1e1ba1;
+	width: 55%;
+	height: 44%;
+	border-radius: 15%;
+	transform: rotate(-80deg);
+	z-index: 1;
+}
+.hat-2{
+	top: -8%;
+	left: 52%;
+	background: navy;
+	width: 7%;
+	height: 60%;
+	border-radius: 20%;
+	transform: rotate(-80deg);
+	z-index: 1;
+}
+.hat-3{
+	top: -8%;
+	left: 55%;
+	background: #791919;
+	width: 5%;
+	height: 44%;
+	transform: rotate(-80deg);
+	z-index: 5;
+}
+.wind{
+	width: 100%;
+	height: 100%;
+  animation-duration: 3s;
+  animation-name: hat;
+  animation-iteration-count: infinite;
+  transform-origin:0% 0%;
+  animation-timing-function: linear;
+	z-index: 10;
+}
+@keyframes hat{
+  10% {
+	transform: rotateY(10deg);
+  }
+  20% {
+	transform: rotateY(20deg);
+  }
+  30% {
+	transform: rotateY(10deg);
+  }
+  40% {
+	transform: rotateY(15deg);
+  }
+}
+.scarf-1{
+	top: 89%;
+	left: 17%;
+	background: #c21a1a;
+	width: 68%;
+	height: 15%;
+	border-radius: 10%;
+  z-index: 1;
+}
+.scarf-2{
+	top: 89%;
+	left: 63%;
+	background: #ac0000;
+	width: 15%;
+	height: 51%;
+	border-radius: 10%;
+}
+.scarf-3{
+	top: 89%;
+	left: 47%;
+	background: #950101;
+	width: 15%;
+	height: 28%;
+	border-radius: 10%;
+}
 
 
     </style>
@@ -244,7 +526,6 @@ background-color: #D8A7B1;
 
             <li><strong> How can I practice Computer Science A</strong> </li>
             <ul>
-                <li><p> </p></li>
                 <li><p>I think that the best strategy is to make sure you have a compiler to practice on at home.</p> </li>
                 <li><p> Downloading BlueJ works pretty well, especially BlueJ. </p></li>
                 <li><p>I highly recommend blueJ because it is so easy to download and use, as well as it has a nice highlighting feature so you can see your classes and methods easily  </p></li>
@@ -262,7 +543,7 @@ background-color: #D8A7B1;
             </ul>
 
             <li><strong> What is something about this class that no one tells you about? </strong> </li>
-            <p>THIS IS SUCH AN IMPORTANT QUESTION SO LISTEN UP!/p>
+            <p>THIS IS SUCH AN IMPORTANT QUESTION SO LISTEN UP!</p>
             <ul>
                 <li><p>You need a LOT of Resilience</p></li>
                 <li><p>The reason I say this because in coding you are not always going to know the answer.</p></li>
@@ -273,7 +554,7 @@ background-color: #D8A7B1;
             <ul>
                 <li><p>Honestly no...</p></li>
                 <li><p>CSP is meant to give you a very beginning intro to coding as a whole and is WAYYY less technical</p></li>
-                <li><p>CSP is also testing JavaScript (unfortunately Java and Javascript are not the same thing :((</p></li>
+                <li><p>CSP is also testing (usually) JavaScript (unfortunately Java and Javascript are not the same thing :((</p></li>
                 <li><p>I also feel CSP focuses more on your fundamentals rather than technical coding skills.</p></li>
             </ul>
         </ol>
@@ -296,7 +577,7 @@ background-color: #D8A7B1;
     <p></p>
     <p></p>
     <div id="pic" class="app-section">
-        <img src="Screenshot%202026-11-02%20151237.png" width="600" height="486">
+        <img src="coding.png" width="600" height="486">
         <p>Let's lock in on Comp Sci!</p>
     </div>
 
@@ -315,41 +596,40 @@ background-color: #D8A7B1;
 
         <a href="geo.html" style="text-decoration: none;">
             <button type="button">
-                <img src="Screenshot%202026-11-02%20131614.png" alt="Icon" width="150" height = "200">
+                <img src="globe.png" alt="Icon" width="100" height = "100">
                 AP Human Geography
             </button>
         </a>
 
         <a href="hist.html" style="text-decoration: none;">
             <button type="button">
-                <img src="Screenshot%202026-11-02%20135210.png" alt="Icon" width="150" height = "200" >
+                <img src="history.png" alt="Icon" width="100" height = "100" >
                 AP World History
             </button>
         </a>
 
         <a href="Physics.html" style="text-decoration: none;">
             <button type="button">
-                <img src="Screenshot%202026-11-02%20131117.png" alt="Icon" width="150" height = "200" >
+                <img src="physics.png" alt="Icon" width="100" height = "100" >
                 AP Physics 1
             </button>
         </a>
 
         <a href="csp.html" style="text-decoration: none;">
             <button type="button">
-                <img src="Screenshot%202026-11-02%20135443.png" alt="Icon" width="150" height = "200">
+                <img src="coding2.png" alt="Icon" width="100" height = "100">
                 AP Comp Sci Principles
             </button>
         </a>
 
         <a href="csa.html" style="text-decoration: none;">
             <button type="button">
-                <img src="Screenshot%202026-11-02%20135549.png" alt="Icon" width="150" height = "200">
+                <img src="coding.png" alt="Icon" width="100" height = "100">
                 AP Comp Sci A
             </button>
         </a>
         <p>Are you locked? Click on any buttons to begin!!</p>
         <p></p>
-        <p>More subjects coming soon...</p>
 
 
     </div>
@@ -359,10 +639,83 @@ background-color: #D8A7B1;
 </div>
 </div>
 
-<footer class="w3-container w3-padding-64 w3-center w3-large" style="background-color: #D8A7B1; color: white;">
-    <div class="w3-xlarge w3-padding-16">
-        <p> Created by Faaezah Ahmed Shaik - Made for girls, by a girl in STEM</p>
-        <i class="fa fa-heart"></i>
+<!-- Codepen code -->
+<main>
+    <div class="snowman">
+        <div class="wind">
+            <div class="hat-1"></div>
+            <div class="hat-2"></div>
+            <div class="hat-3"></div>
+        </div>
+        <div class="snowman-mouth-1"></div>
+        <div class="snowman-mouth-2"></div>
+        <div class="snowman-mouth-3"></div>
+        <div class="snowman-mouth-4"></div>
+        <div class="snowman-mouth-5"></div>
+        <div class="snowman-button-1"></div>
+        <div class="snowman-button-2"></div>
+        <div class="snowman-button-3"></div>
+        <div class="snowman-button-4"></div>
+        <div class="head"></div>
+        <div class="bottom"></div>
+        <div class="right-eye"></div>
+        <div class="left-eye">
+            <div class="nose"></div>
+        </div>
+        <div class="left-arm"></div>
+        <div class="left-mitten-1"></div>
+        <div class="left-mitten-2"></div>
+        <div class="right-arm"></div>
+        <div class="right-mitten-1"></div>
+        <div class="right-mitten-2"></div>
+        <div class="wind">
+            <div class="scarf-1"></div>
+            <div class="scarf-2"></div>
+            <div class="scarf-3"></div>
+        </div>
+    </div>
+
+    <div class="snowman snowman2">
+        <div class="wind">
+        </div>
+        <div class="snowman-mouth-1"></div>
+        <div class="snowman-mouth-2"></div>
+        <div class="snowman-mouth-3"></div>
+        <div class="snowman-mouth-4"></div>
+        <div class="snowman-mouth-5"></div>
+        <div class="snowman-button-1"></div>
+        <div class="snowman-button-2"></div>
+        <div class="snowman-button-3"></div>
+        <div class="snowman-button-4"></div>
+        <div class="head"></div>
+        <div class="bottom"></div>
+        <div class="right-eye"></div>
+        <div class="left-eye">
+            <div class="nose"></div>
+        </div>
+        <div class="left-arm"></div>
+        <div class="left-mitten-1"></div>
+        <div class="left-mitten-2"></div>
+        <div class="right-arm"></div>
+        <div class="right-mitten-1"></div>
+        <div class="right-mitten-2"></div>
+        <div class="wind">
+            <div class="scarf-1"></div>
+            <div class="scarf-2"></div>
+            <div class="scarf-3"></div>
+        </div>
+    </div>
+
+
+
+</main>
+
+<footer class="w3-container w3-padding-64 w3-center w3-large" style="background-color: #D8A7B1; color: white; position:static;">
+    <div class = "footer">
+        <div class="w3-xlarge w3-padding-16">
+            <h1> By Faaezah Shaik - Made for girls, by a girl in STEM</h1>
+            <i class="fa fa-heart"></i>
+        </div>
     </div>
 </footer>
 

@@ -19,6 +19,7 @@
             --w3-font-size: 30px;
             --w3-warning-bg: #9DC183;
 
+
         }
 
         header.main-header {
@@ -116,6 +117,15 @@ background-color: #D8A7B1;
 
 }
 
+.button-fix {
+    width: 100px;
+    height:200px;
+    /* googled some of the ways to fix the image not showing fully */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size:cover;
+}
+
 @keyframes fallAnim {
   0% {
     transform: translateY(0) scale(var(--scaleVar));
@@ -124,6 +134,291 @@ background-color: #D8A7B1;
     transform: translateY(120vh) scale(var(--scaleVar));
   }
 }
+
+       /*fully modified this code from codepen */
+/*https://codepen.io/minajeong/pen/xmXqqo */
+
+main{
+    max-width: 500px;
+    padding-top: 3%;
+}
+.snowman *{
+  position: absolute;
+}
+.snowman {
+  position: relative;
+  margin: auto;
+  display: flex;
+
+
+  width: 200px;
+  height: 200px;
+ }
+
+
+.snowman2 {
+  transform: translateX(1055px);
+  transform: translateY(100px, -50px);
+  margin-left: auto;
+}
+.bottom {
+  top: 88%;
+	left: -7%;
+	background: white;
+	width: 120%;
+	height: 120%;
+	border-radius: 50%;
+}
+.head {
+  top: 15%;
+	left: 5%;
+	background: white;
+	width: 88%;
+	height: 88%;
+	border-radius: 50%;
+}
+.right-eye {
+	top: 45%;
+	left: 62%;
+	background: black;
+	width: 15%;
+	height: 15%;
+	border-radius: 50%;
+}
+.left-eye {
+	top: 35%;
+	left: 21%;
+	background: black;
+	width: 15%;
+	height: 15%;
+	border-radius: 50%;
+}
+.nose {
+  -webkit-clip-path: polygon(70% 51%, 70% 72%, 0 60%);
+  clip-path: polygon(70% 50%, 70% 72%, 0 60%);
+  top: -180%;
+	left:-230%;
+	width: 10%;
+	height: 11rem;
+	border-right: 10rem solid #d73d00;
+}
+.snowman-mouth-1{
+	top: 72%;
+	left: 21%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-mouth-2{
+	top: 78%;
+	left: 29%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-mouth-3{
+	top: 80%;
+	left: 40%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-mouth-4{
+	top: 79%;
+	left: 51%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-mouth-5{
+	top: 74%;
+	left: 62%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-button-1{
+	top: 115%;
+	left: 21%;
+	background: black;
+	width: 8%;
+	height: 8%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-button-2{
+	top: 130%;
+	left: 14%;
+	background: black;
+	width: 8%;
+	height: 8%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-button-3{
+	top: 147%;
+	left: 11%;
+	background: black;
+	width: 8%;
+	height: 8%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-button-4{
+	top: 165%;
+	left: 15%;
+	background: black;
+	width: 8%;
+	height: 8%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.left-arm{
+	top: 108%;
+	left: -39%;
+	background: #4c2900;
+	width: 44%;
+	height: 7%;
+	border-radius: 50%;
+	transform: rotate(20deg);
+}
+.left-mitten-1{
+	top: 95%;
+	left: -45%;
+	background:beige;
+	width: 24%;
+	height: 20%;
+	border-radius: 50% 36% 36% 50%;
+	transform: rotate(20deg);
+	z-index: 1;
+}
+.left-mitten-2{
+	top: 92%;
+	left: -34%;
+	background: beige;
+	width: 13%;
+	height: 8%;
+	border-radius: 50%;
+	transform: rotate(60deg);
+}
+.right-arm{
+  top: 107%;
+	left: 84%;
+	background: #4c2900;
+	width: 58%;
+	height: 8%;
+	border-radius: 50%;
+	transform: rotate(-20deg);
+}
+.right-mitten-1{
+	top: 93%;
+	left: 122%;
+	background:beige;
+	width: 24%;
+	height: 20%;
+	border-radius: 36% 50% 50% 36%;
+	transform: rotate(-20deg);
+	z-index: 1;
+}
+.right-mitten-2{
+	top: 91%;
+	left: 123%;
+	background: beige;
+	width: 13%;
+	height: 8%;
+	border-radius: 50%;
+	transform: rotate(-60deg);
+}
+.hat-1{
+	top: -24%;
+	left: 33%;
+	background: #1e1ba1;
+	width: 55%;
+	height: 44%;
+	border-radius: 15%;
+	transform: rotate(-80deg);
+	z-index: 1;
+}
+.hat-2{
+	top: -8%;
+	left: 52%;
+	background: navy;
+	width: 7%;
+	height: 60%;
+	border-radius: 20%;
+	transform: rotate(-80deg);
+	z-index: 1;
+}
+.hat-3{
+	top: -8%;
+	left: 55%;
+	background: #791919;
+	width: 5%;
+	height: 44%;
+	transform: rotate(-80deg);
+	z-index: 5;
+}
+.wind{
+	width: 100%;
+	height: 100%;
+  animation-duration: 3s;
+  animation-name: hat;
+  animation-iteration-count: infinite;
+  transform-origin:0% 0%;
+  animation-timing-function: linear;
+	z-index: 10;
+}
+@keyframes hat{
+  10% {
+	transform: rotateY(10deg);
+  }
+  20% {
+	transform: rotateY(20deg);
+  }
+  30% {
+	transform: rotateY(10deg);
+  }
+  40% {
+	transform: rotateY(15deg);
+  }
+}
+.scarf-1{
+	top: 89%;
+	left: 17%;
+	background: #c21a1a;
+	width: 68%;
+	height: 15%;
+	border-radius: 10%;
+  z-index: 1;
+}
+.scarf-2{
+	top: 89%;
+	left: 63%;
+	background: #ac0000;
+	width: 15%;
+	height: 51%;
+	border-radius: 10%;
+}
+.scarf-3{
+	top: 89%;
+	left: 47%;
+	background: #950101;
+	width: 15%;
+	height: 28%;
+	border-radius: 10%;
+}
+
+
     </style>
 </head>
 
@@ -199,12 +494,7 @@ background-color: #D8A7B1;
 
     <div class="w3-padding-24">
         <nav class="w3-bar custom-nav w3-border w3-card" style="display:inline-flex; flex-wrap: wrap; justify-content: center;">
-            <a href="#dreamboard" class="w3-bar-block w3-padding w3-font-size">DreamBoard</a>
-            <a href="#checklist" class="w3-bar-block w3-padding w3-font-size">Girl's CheckList</a>
-            <a href="#subjects" class="w3-bar-block w3-padding">Subjects</a>
-            <a href="#grades" class="w3-bar-block w3-padding">Grades Tracker</a>
-            <a href="#activities" class="w3-bar-block w3-padding">Events & Activities</a>
-            <a href="#calendar" class="w3-bar-block w3-padding">Calendar</a>
+            <a href="index.html">Home</a>
         </nav>
     </div>
 </header>
@@ -212,45 +502,196 @@ background-color: #D8A7B1;
 
 
 <div class="w3-content w3-padding-64" style="max-width:1200px">
-    <div class="w3-warning">
-        <h1>Your Ultimate Guide to becoming an Academic Weapon</h1>
-    </div>
+
     <div> </div>
-    <!-- Faaezah's DreamBoard Code-->
-    <div id="dreamboard" class="app-section">
-        <h2 class="w3-text-Black -w3-font-size">Dreamboard</h2>
-        <img src="Screenshot%202026-10-31%20160603.png" width="270" height="400">
-        <img src="Screenshot%202026-10-31%20160737.png" width="270" height="400">
-        <img src="Screenshot%202026-10-31%20160939.png" width="270" height="400">
-        <img src="Screenshot%202026-10-31%20185650.png" width="270" height="400">
-        <h2> Some inspo to get you started :D!!</h2>
-        <small>Please note that these images are not mine and belong to Pinterest. </small>
+    <!-- writingHist has no real function here -->
+    <div id="writingCSA" class="app-section">
+
+        <h2 class="w3-text-Black -w3-font-size">Subject Help</h2>
+        <h1><strong>AP Physics 1 </strong> Tips </h1>
+        <ol>
+            <li><strong> Why does this matter? </strong> </li>
+            <ul>
+                <li><p> AP Physics 1 is so important because it literally reveals how everything is working right now</p></li>
+                <li><p>Physics 1 course content is answering why you are able to sit right now, without floating into an endless void</p></li>
+                <li><p>We covered this so we can start with some motivation before we go deep into AP Physics 1</p></li>
+            </ul>
+
+            <li><strong> What is the best approach to do well in this class?</strong> </li>
+            <ul>
+                <li><p>This class has been the hardest AP class I have ever taken</p></li>
+                <li><p>I really think that a lot of practice of the contents through practice problems every night/as soon as when the content is taught is really beneficial</p></li>
+
+            </ul>
+
+            <li><strong> How can I practice Physics?</strong> </li>
+            <ul>
+                <li><p>I think the best practice is to watch a lot of tutorial videos and do the practice problems in the tutorials with the instructor.</p> </li>
+                <li><p>This helps you identify any weakness points that you may have.</p></li>
+                <li><p>I think this really helped me pass my AP physics exam.</p></li>
+            </ul>
+
+
+            <li><strong> How about for the FRQs?</strong> </li>
+            <ul>
+                <li><p>The FRQs really boil down to how well you understand the content</p></li>
+                <li><p>However, if you are stuck on things, I would say that try to write something rather than nothing so you can partial credit points</p></li>
+            </ul>
+
+            <li><strong> What is a non-negotiable in this class?</strong> </li>
+            <ul>
+                <li><p>I have said this a lot here but it is 100% PRACTICE that really sets you up for success.</p></li>
+
+            </ul>
+
+        </ol>
+        <i class="fa fa-star"></i>
+        <h1><strong>That was a lot! Good job for reading through all of it :)!</strong></h1>
 
     </div>
-    </p>  </p>
-    <div id="checklist" class="app-section">
-        <h2 class="w3-text-Black -w3-font-size">Checklist</h2>
-        <!-- Asked AI for some help on this -->
-        <h3> Browse through what will be covered:</h3>
-        <select class="w3-select w3-border" name="Browse Through Goals" multiple size = 4>
-            <h3> We will be working to help you achieve all of these!!! </h3>
-            <option value="As">A's in All your Classes</option>
-            <option value="routine">Make a Sustainable Study Routine</option>
-            <option value="diet">Managing Diet with Studying</option>
-            <option value="fun">How to Study + Have Fun</option>
-        </select>
-        <p> To achieve any of these goals, there is one thing in common: ORGANIZATION is a necessity! </p>
-        <img src="Screenshot%202026-10-31%20185650.png" width="600" height="486">
+
+    <p></p>
+    <p></p>
+    <div id="pic" class="app-section">
+        <img src="physics.png" width="600" height="486">
+        <p>Let's lock in on Physics!</p>
+    </div>
+
+    <p> </p>
+    <div> </div>
+
+    <div id="subjects" class="app-section">
+        <div class="w3-warning">
+            <h1>Click "Home" on the nav bar (on the top) to go back to home page :)</h1>
+        </div>
+        <div> </div>
+
+        <h2 class="w3-text-Black -w3-font-size">Subject Help</h2>
+        <h1><strong>Customized</strong> tips for various AP subjects</h1>
+        <h2>You're welcome Haha :))</h2>
+
+        <a href="geo.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="globe.png" alt="Icon" width="100" height = "100">
+                AP Human Geography
+            </button>
+        </a>
+
+        <a href="hist.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="history.png" alt="Icon" width="100" height = "100" >
+                AP World History
+            </button>
+        </a>
+
+        <a href="Physics.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="physics.png" alt="Icon" width="100" height = "100" >
+                AP Physics 1
+            </button>
+        </a>
+
+        <a href="csp.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="coding2.png" alt="Icon" width="100" height = "100">
+                AP Comp Sci Principles
+            </button>
+        </a>
+
+        <a href="csa.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="coding.png" alt="Icon" width="100" height = "100">
+                AP Comp Sci A
+            </button>
+        </a>
+        <p>Are you locked? Click on any buttons to begin!!</p>
+        <p></p>
+
+
     </div>
     <p> </p>
 
 
+</div>
+</div>
+
+<!-- Codepen code -->
+<main>
+    <div class="snowman">
+        <div class="wind">
+            <div class="hat-1"></div>
+            <div class="hat-2"></div>
+            <div class="hat-3"></div>
+        </div>
+        <div class="snowman-mouth-1"></div>
+        <div class="snowman-mouth-2"></div>
+        <div class="snowman-mouth-3"></div>
+        <div class="snowman-mouth-4"></div>
+        <div class="snowman-mouth-5"></div>
+        <div class="snowman-button-1"></div>
+        <div class="snowman-button-2"></div>
+        <div class="snowman-button-3"></div>
+        <div class="snowman-button-4"></div>
+        <div class="head"></div>
+        <div class="bottom"></div>
+        <div class="right-eye"></div>
+        <div class="left-eye">
+            <div class="nose"></div>
+        </div>
+        <div class="left-arm"></div>
+        <div class="left-mitten-1"></div>
+        <div class="left-mitten-2"></div>
+        <div class="right-arm"></div>
+        <div class="right-mitten-1"></div>
+        <div class="right-mitten-2"></div>
+        <div class="wind">
+            <div class="scarf-1"></div>
+            <div class="scarf-2"></div>
+            <div class="scarf-3"></div>
+        </div>
+    </div>
+
+    <div class="snowman snowman2">
+        <div class="wind">
+        </div>
+        <div class="snowman-mouth-1"></div>
+        <div class="snowman-mouth-2"></div>
+        <div class="snowman-mouth-3"></div>
+        <div class="snowman-mouth-4"></div>
+        <div class="snowman-mouth-5"></div>
+        <div class="snowman-button-1"></div>
+        <div class="snowman-button-2"></div>
+        <div class="snowman-button-3"></div>
+        <div class="snowman-button-4"></div>
+        <div class="head"></div>
+        <div class="bottom"></div>
+        <div class="right-eye"></div>
+        <div class="left-eye">
+            <div class="nose"></div>
+        </div>
+        <div class="left-arm"></div>
+        <div class="left-mitten-1"></div>
+        <div class="left-mitten-2"></div>
+        <div class="right-arm"></div>
+        <div class="right-mitten-1"></div>
+        <div class="right-mitten-2"></div>
+        <div class="wind">
+            <div class="scarf-1"></div>
+            <div class="scarf-2"></div>
+            <div class="scarf-3"></div>
+        </div>
+    </div>
 
 
 
-<footer class="w3-container w3-padding-64 w3-center w3-large" style="background-color: #D8A7B1; color: white;">
-    <div class="w3-xlarge w3-padding-16">
-        <p> Created by Faaezah Ahmed Shaik - Made for girls, by a fellow girl in STEM</p>
+</main>
+
+<footer class="w3-container w3-padding-64 w3-center w3-large" style="background-color: #D8A7B1; color: white; position:static;">
+    <div class = "footer">
+        <div class="w3-xlarge w3-padding-16">
+            <h1>By Faaezah Shaik - Made for girls, by a girl in STEM</h1>
+            <i class="fa fa-heart"></i>
+        </div>
     </div>
 </footer>
 

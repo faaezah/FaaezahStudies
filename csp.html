@@ -1,10 +1,718 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<!-- Asked AI to give me a very rough draft template using CSS and HTML to get me started -->
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Faaezah Studies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+        body {
+            font-family: 'Raleway', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #BAC8Ff;
+            color: #333;
+            --w3-font-size: 30px;
+            --w3-warning-bg: #9DC183;
+
+
+        }
+
+        header.main-header {
+            background-color: #ffb6c1;
+            color: #fff;
+            padding: 30px 15px;
+            border-bottom: 5px solid #9DC183;
+        }
+
+
+        .custom-nav {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .custom-nav a {
+            transition: all 0.3s ease;
+        }
+
+        /* Hovering menu items turns them Sage Green */
+        .custom-nav {
+            background-color: #9DC183 !important;
+            color: white !important;
+        }
+
+        /* Layout placeholders styling */
+        .app-section {
+            background-color: #D8A7B1;
+            --w3-font-size: 25px;
+            text-align: center;
+            border: 10px dotted #F7BD81;
+        }
+
+       /* free opensource code from FreeFrontend: https://freefrontend.com/css-snow-effects/#2025-11-14-css-snowfall-effect-with-sass-generator-l */
+       /* modified this code to match the website and had AI debug the space at the top error I had  */
+.snowFall {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.snowFall div {
+  position: absolute;
+  top: -10vh;
+
+  left: calc(100% / 12 * (1 + (11 * (var(--delayVar, 1) + 1)) % 11));
+
+  display: inline-flex;
+  flex-shrink: 0;
+  margin: 3vh;
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  background-color: white;
+  --scaleVar: 0.5;
+  --delayVar: 0;
+  opacity: 0.35;
+  animation: fallAnim 12000ms linear infinite;
+}
+.delayMe div {
+  animation-delay: 1200ms;
+}
+.snowFall div:nth-of-type(2n) {
+  animation-delay: -14000ms;
+  animation-duration: 11000ms;
+  left: 20%;
+
+}
+.snowFall div:nth-of-type(3n) {
+  animation-delay: -300ms;
+  animation-duration: 14000ms;
+  left: 70%;
+}
+.biggerSnow {
+  transform: scale(1.5);
+/*   filter: blur(0.2vh); */
+}
+.delayMe div:nth-of-type(2n) {
+  animation-delay: 1500ms;
+}
+.delayMe div:nth-of-type(3n) {
+  animation-delay: 11000ms;
+}
+
+.org {
+background-color: #D8A7B1;
+ --w3-font-size: 25px
+
+}
+
+.button-fix {
+    width: 100px;
+    height:200px;
+    /* googled some of the ways to fix the image not showing fully */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size:cover;
+}
+
+@keyframes fallAnim {
+  0% {
+    transform: translateY(0) scale(var(--scaleVar));
+  }
+  100% {
+    transform: translateY(120vh) scale(var(--scaleVar));
+  }
+}
+
+       /*fully modified this code from codepen */
+/*https://codepen.io/minajeong/pen/xmXqqo */
+
+main{
+    max-width: 500px;
+    padding-top: 3%;
+}
+.snowman *{
+  position: absolute;
+}
+.snowman {
+  position: relative;
+  margin: auto;
+  display: flex;
+
+
+  width: 200px;
+  height: 200px;
+ }
+
+
+.snowman2 {
+  transform: translateX(1055px);
+  transform: translateY(100px, -50px);
+  margin-left: auto;
+}
+.bottom {
+  top: 88%;
+	left: -7%;
+	background: white;
+	width: 120%;
+	height: 120%;
+	border-radius: 50%;
+}
+.head {
+  top: 15%;
+	left: 5%;
+	background: white;
+	width: 88%;
+	height: 88%;
+	border-radius: 50%;
+}
+.right-eye {
+	top: 45%;
+	left: 62%;
+	background: black;
+	width: 15%;
+	height: 15%;
+	border-radius: 50%;
+}
+.left-eye {
+	top: 35%;
+	left: 21%;
+	background: black;
+	width: 15%;
+	height: 15%;
+	border-radius: 50%;
+}
+.nose {
+  -webkit-clip-path: polygon(70% 51%, 70% 72%, 0 60%);
+  clip-path: polygon(70% 50%, 70% 72%, 0 60%);
+  top: -180%;
+	left:-230%;
+	width: 10%;
+	height: 11rem;
+	border-right: 10rem solid #d73d00;
+}
+.snowman-mouth-1{
+	top: 72%;
+	left: 21%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-mouth-2{
+	top: 78%;
+	left: 29%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-mouth-3{
+	top: 80%;
+	left: 40%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-mouth-4{
+	top: 79%;
+	left: 51%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-mouth-5{
+	top: 74%;
+	left: 62%;
+	background: black;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-button-1{
+	top: 115%;
+	left: 21%;
+	background: black;
+	width: 8%;
+	height: 8%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-button-2{
+	top: 130%;
+	left: 14%;
+	background: black;
+	width: 8%;
+	height: 8%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-button-3{
+	top: 147%;
+	left: 11%;
+	background: black;
+	width: 8%;
+	height: 8%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.snowman-button-4{
+	top: 165%;
+	left: 15%;
+	background: black;
+	width: 8%;
+	height: 8%;
+	border-radius: 50%;
+	z-index: 1;
+}
+.left-arm{
+	top: 108%;
+	left: -39%;
+	background: #4c2900;
+	width: 44%;
+	height: 7%;
+	border-radius: 50%;
+	transform: rotate(20deg);
+}
+.left-mitten-1{
+	top: 95%;
+	left: -45%;
+	background:beige;
+	width: 24%;
+	height: 20%;
+	border-radius: 50% 36% 36% 50%;
+	transform: rotate(20deg);
+	z-index: 1;
+}
+.left-mitten-2{
+	top: 92%;
+	left: -34%;
+	background: beige;
+	width: 13%;
+	height: 8%;
+	border-radius: 50%;
+	transform: rotate(60deg);
+}
+.right-arm{
+  top: 107%;
+	left: 84%;
+	background: #4c2900;
+	width: 58%;
+	height: 8%;
+	border-radius: 50%;
+	transform: rotate(-20deg);
+}
+.right-mitten-1{
+	top: 93%;
+	left: 122%;
+	background:beige;
+	width: 24%;
+	height: 20%;
+	border-radius: 36% 50% 50% 36%;
+	transform: rotate(-20deg);
+	z-index: 1;
+}
+.right-mitten-2{
+	top: 91%;
+	left: 123%;
+	background: beige;
+	width: 13%;
+	height: 8%;
+	border-radius: 50%;
+	transform: rotate(-60deg);
+}
+.hat-1{
+	top: -24%;
+	left: 33%;
+	background: #1e1ba1;
+	width: 55%;
+	height: 44%;
+	border-radius: 15%;
+	transform: rotate(-80deg);
+	z-index: 1;
+}
+.hat-2{
+	top: -8%;
+	left: 52%;
+	background: navy;
+	width: 7%;
+	height: 60%;
+	border-radius: 20%;
+	transform: rotate(-80deg);
+	z-index: 1;
+}
+.hat-3{
+	top: -8%;
+	left: 55%;
+	background: #791919;
+	width: 5%;
+	height: 44%;
+	transform: rotate(-80deg);
+	z-index: 5;
+}
+.wind{
+	width: 100%;
+	height: 100%;
+  animation-duration: 3s;
+  animation-name: hat;
+  animation-iteration-count: infinite;
+  transform-origin:0% 0%;
+  animation-timing-function: linear;
+	z-index: 10;
+}
+@keyframes hat{
+  10% {
+	transform: rotateY(10deg);
+  }
+  20% {
+	transform: rotateY(20deg);
+  }
+  30% {
+	transform: rotateY(10deg);
+  }
+  40% {
+	transform: rotateY(15deg);
+  }
+}
+.scarf-1{
+	top: 89%;
+	left: 17%;
+	background: #c21a1a;
+	width: 68%;
+	height: 15%;
+	border-radius: 10%;
+  z-index: 1;
+}
+.scarf-2{
+	top: 89%;
+	left: 63%;
+	background: #ac0000;
+	width: 15%;
+	height: 51%;
+	border-radius: 10%;
+}
+.scarf-3{
+	top: 89%;
+	left: 47%;
+	background: #950101;
+	width: 15%;
+	height: 28%;
+	border-radius: 10%;
+}
+
+
+    </style>
 </head>
+
 <body>
+
+<!-- Header Section -->
+
+<div class="snowFall">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class="snowFall delayMe">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class="snowFall biggerSnow">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class="snowFall delayMe biggerSnow">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+
+<header class="w3-container w3-center main-header">
+    <h1 class="w3-jumbo w3-text-bold">Faaezah Studies</h1>
+    <p class="w3-font-size">Made by Faaezah to uplift other girls in their studies! </p>
+    <button id="changeCol" onclick="document.body.classList.toggle('w3-dark-mode')">
+        Switch to the Abyss
+    </button>
+
+
+    <div class="w3-padding-24">
+        <nav class="w3-bar custom-nav w3-border w3-card" style="display:inline-flex; flex-wrap: wrap; justify-content: center;">
+            <a href="index.html">Home</a>
+        </nav>
+    </div>
+</header>
+
+
+
+<div class="w3-content w3-padding-64" style="max-width:1200px">
+
+    <div> </div>
+    <!-- writingHist has no real function here -->
+    <div id="writingCSA" class="app-section">
+
+        <h2 class="w3-text-Black -w3-font-size">Subject Help</h2>
+        <h1><strong>Computer Science P</strong> Tips </h1>
+        <ol>
+            <li><strong> Why does this matter? </strong> </li>
+            <ul>
+                <li><p> AP Computer Science Principles is important because it helps you have a very strong intro into why coding as a whole matters</p></li>
+                <li><p>Coding is everywhere around you (including making this webpage viewable to you :D!)</p></li>
+                <li><p>We covered this so we can start with some motivation before we go deep into AP CSP</p></li>
+            </ul>
+
+            <li><strong> What is the best approach to do well in this class?</strong> </li>
+            <ul>
+                <li><p>This course can be taught in a variety of different languages so it really differs</p></li>
+                <li><p>I was taught this class in javascript but I will try to give the best, comprehensive tips I can!</p></li>
+
+            </ul>
+
+            <li><strong> How can I practice Computer Science Principles</strong> </li>
+            <ul>
+                <li><p>I think that the best strategy is to use code.org</p> </li>
+                <li><p>Making labs, doing projects,doing practice problems on code.org was very helpful.</p></li>
+                <li><p>Code.org does a really good job at convering key topics so be sure to ask your teacher for access to this website!</p></li>
+            </ul>
+
+
+            <li><strong> How about for the FRQs?</strong> </li>
+            <ul>
+                <li><p>The FRQs are based on code YOU wrote so make sure you understand what is going on in your code :)</p></li>
+                <li><p>There really is not much more of a tip that I can give, because it really is like dependent on what you make ahead of time.</p></li>
+            </ul>
+
+            <li><strong> What is a non-negotiable in this class?</strong> </li>
+            <p>THIS IS SUCH AN IMPORTANT QUESTION SO LISTEN UP!</p>
+            <ul>
+                <li><p>You need to have REALLY GOOD TIME MANAGEMENT</p></li>
+                <li><p>For this class, you will need to submit a portfolio so make sure you pay attention and submit this way before the due date (you will need this for your AP test)</p></li>
+                <li><p>You can't really cram coding so make sure to study and practice WELL in advance!</p></li>
+
+
+        </ul>
+            <li><strong>Is this class anything like CSA?</strong></li>
+            <ul>
+                <li><p>Honestly no...</p></li>
+                <li><p>CSA is very deep into Java and I think that CSP is more accessible for beginners.</p></li>
+                <li><p>I also feel CSA focuses more on your technical skills rather than fundamentals that CSP teaches</p></li>
+            </ul>
+        </ol>
+        <i class="fa fa-star"></i>
+        <h1><strong>That was a lot! Good job for reading through all of it :)!</strong></h1>
+
+    </div>
+
+    <p></p>
+    <p></p>
+    <div id="CSA" class="app-section">
+        <p>This is not an ad or anything but I really recommend Hack club to make coding more fun.</p>
+        <p>YOU LITERALLY GET PRIZES FOR BUILDING WHATEVER YOU WANT!! I think that's the best way to test your coding skills and also have fun!</p>
+
+
+        <iframe src = "https://snowglobe.hackclub.com/" title="Hack Club Snowglobe" style="width: 700px; height: 500px; border: none;"></iframe>
+        <p>Hack Club Snowglobe 2026-2027 by Hack Club Athena!!</p>
+
+    </div>
+    <p></p>
+    <p></p>
+    <div id="pic" class="app-section">
+        <img src="coding2.png" width="600" height="486">
+        <p>Let's lock in on Comp Sci!</p>
+    </div>
+
+    <p> </p>
+    <div> </div>
+
+    <div id="subjects" class="app-section">
+        <div class="w3-warning">
+            <h1>Click "Home" on the nav bar (on the top) to go back to home page :)</h1>
+        </div>
+        <div> </div>
+
+        <h2 class="w3-text-Black -w3-font-size">Subject Help</h2>
+        <h1><strong>Customized</strong> tips for various AP subjects</h1>
+        <h2>You're welcome Haha :))</h2>
+
+        <a href="geo.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="globe.png" alt="Icon" width="100" height = "100">
+                AP Human Geography
+            </button>
+        </a>
+
+        <a href="hist.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="history.png" alt="Icon" width="100" height = "100" >
+                AP World History
+            </button>
+        </a>
+
+        <a href="Physics.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="physics.png" alt="Icon" width="100" height = "100" >
+                AP Physics 1
+            </button>
+        </a>
+
+        <a href="csp.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="coding2.png" alt="Icon" width="100" height = "100">
+                AP Comp Sci Principles
+            </button>
+        </a>
+
+        <a href="csa.html" style="text-decoration: none;">
+            <button type="button">
+                <img src="coding.png" alt="Icon" width="100" height = "100">
+                AP Comp Sci A
+            </button>
+        </a>
+        <p>Are you locked? Click on any buttons to begin!!</p>
+        <p></p>
+
+
+    </div>
+    <p> </p>
+
+
+</div>
+</div>
+<!-- Codepen code -->
+<main>
+    <div class="snowman">
+        <div class="wind">
+            <div class="hat-1"></div>
+            <div class="hat-2"></div>
+            <div class="hat-3"></div>
+        </div>
+        <div class="snowman-mouth-1"></div>
+        <div class="snowman-mouth-2"></div>
+        <div class="snowman-mouth-3"></div>
+        <div class="snowman-mouth-4"></div>
+        <div class="snowman-mouth-5"></div>
+        <div class="snowman-button-1"></div>
+        <div class="snowman-button-2"></div>
+        <div class="snowman-button-3"></div>
+        <div class="snowman-button-4"></div>
+        <div class="head"></div>
+        <div class="bottom"></div>
+        <div class="right-eye"></div>
+        <div class="left-eye">
+            <div class="nose"></div>
+        </div>
+        <div class="left-arm"></div>
+        <div class="left-mitten-1"></div>
+        <div class="left-mitten-2"></div>
+        <div class="right-arm"></div>
+        <div class="right-mitten-1"></div>
+        <div class="right-mitten-2"></div>
+        <div class="wind">
+            <div class="scarf-1"></div>
+            <div class="scarf-2"></div>
+            <div class="scarf-3"></div>
+        </div>
+    </div>
+
+    <div class="snowman snowman2">
+        <div class="wind">
+        </div>
+        <div class="snowman-mouth-1"></div>
+        <div class="snowman-mouth-2"></div>
+        <div class="snowman-mouth-3"></div>
+        <div class="snowman-mouth-4"></div>
+        <div class="snowman-mouth-5"></div>
+        <div class="snowman-button-1"></div>
+        <div class="snowman-button-2"></div>
+        <div class="snowman-button-3"></div>
+        <div class="snowman-button-4"></div>
+        <div class="head"></div>
+        <div class="bottom"></div>
+        <div class="right-eye"></div>
+        <div class="left-eye">
+            <div class="nose"></div>
+        </div>
+        <div class="left-arm"></div>
+        <div class="left-mitten-1"></div>
+        <div class="left-mitten-2"></div>
+        <div class="right-arm"></div>
+        <div class="right-mitten-1"></div>
+        <div class="right-mitten-2"></div>
+        <div class="wind">
+            <div class="scarf-1"></div>
+            <div class="scarf-2"></div>
+            <div class="scarf-3"></div>
+        </div>
+    </div>
+
+
+
+</main>
+
+<footer class="w3-container w3-padding-64 w3-center w3-large" style="background-color: #D8A7B1; color: white; position:static;">
+    <div class = "footer">
+        <div class="w3-xlarge w3-padding-16">
+            <h1> By Faaezah Shaik - Made for girls, by a girl in STEM</h1>
+            <i class="fa fa-heart"></i>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
